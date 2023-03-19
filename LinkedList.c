@@ -15,7 +15,7 @@ void append(char);
 void insert(char);
 void insertAfterHead(char);
 void insertBeforeTail(char);
-void insertBeforeTail2(char);
+void insertThirdFromTail(char);
 void deleteNode(char);
 void deleteLinkedList();
 void searchNode(char);
@@ -131,7 +131,7 @@ void insertBeforeTail(char c)
     }
     size++;
 }
-void insertBeforeTail2(char c)
+void insertThirdFromTail(char c)
 {
     Node *newNode = malloc(sizeof(Node));
     newNode->value = c;
@@ -155,7 +155,6 @@ void insertBeforeTail2(char c)
     }
     else
     {
-
         Node *prevNode = head;
         while (1)
         {
